@@ -1,317 +1,508 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Developer Profile | Erin Bautista-Medalla</title>
-	
-	<!-- bootstrap css -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-	<!-- google font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ERIN BAUTISTA MEDALLA | ARCHITECT.DEV</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=JetBrains+Mono:wght@100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#002020",
+                        "on-primary-fixed-variant": "#2c4c4c",
+                        "primary-fixed-dim": "#abcdcd",
+                        "primary": "#abcdcd",
+                        "on-tertiary-fixed-variant": "#603f2f",
+                        "inverse-surface": "#e0e3e2",
+                        "tertiary": "#ebbda7",
+                        "surface-bright": "#363a3a",
+                        "surface": "#101414",
+                        "outline-variant": "#414848",
+                        "on-surface-variant": "#c1c8c7",
+                        "primary-fixed": "#c6e9e9",
+                        "surface-container-lowest": "#0b0f0f",
+                        "error-container": "#93000a",
+                        "on-primary-container": "#9ec0bf",
+                        "secondary": "#dfc29f",
+                        "accent-glow": "#A8957A",
+                        "background": "#101414",
+                        "error": "#ffb4ab",
+                        "surface-container": "#1c2020",
+                        "text-primary": "#FDF5E6",
+                        "on-secondary-container": "#d0b492",
+                        "on-tertiary-fixed": "#2e1508",
+                        "surface-tint": "#abcdcd",
+                        "tertiary-fixed-dim": "#ebbda7",
+                        "on-secondary-fixed-variant": "#574329",
+                        "primary-container": "#2f4f4f",
+                        "outline": "#8b9292",
+                        "on-error": "#690005",
+                        "inverse-primary": "#446464",
+                        "surface-container-low": "#181c1c",
+                        "surface-elevation": "#161B1B",
+                        "text-muted": "#6B7A7A",
+                        "tertiary-container": "#634232",
+                        "secondary-fixed-dim": "#dfc29f",
+                        "tertiary-fixed": "#ffdbcb",
+                        "surface-container-high": "#272b2b",
+                        "on-surface": "#e0e3e2",
+                        "on-tertiary": "#46291b",
+                        "on-background": "#e0e3e2",
+                        "inverse-on-surface": "#2d3131",
+                        "secondary-container": "#5a452b",
+                        "surface-dim": "#101414",
+                        "on-tertiary-container": "#ddb09b",
+                        "on-secondary-fixed": "#281903",
+                        "on-primary": "#143535",
+                        "surface-variant": "#313535",
+                        "secondary-fixed": "#fcdeba",
+                        "surface-container-highest": "#313535",
+                        "on-secondary": "#3f2d15",
+                        "on-error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "unit": "4px",
+                        "section-gap": "120px",
+                        "margin-edge": "40px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Geist"],
+                        "headline-xl": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "caption": ["Geist"],
+                        "body-md": ["Geist"],
+                        "label-mono": ["JetBrains Mono"],
+                        "headline-md": ["Geist"],
+                        "headline-lg": ["Geist"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "caption": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-mono": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+body {
+    background-color: #101414;
+    color: #e0e3e2
+    }
+.grid-line {
+    background-image: linear-gradient(to right, #414848 1px, transparent 1px);
+    background-size: calc(100% / 12) 100%
+    }
+.bento-card {
+    background: #161B1B;
+    border: 1px solid #2F4F4F;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative
+    }
+.bento-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDMdw9uO3JVTAPiTN2Fw-UChtKZsXnkWRXbVkBDpt8VUER6w_PQrKr6DhWmTiemGNuxkIxN1BBiV2JWWTxevYLY1KZ8iUt7yxyeIfmb1MWMD9EIyolbcElQZuU8HqJVrvCPsoGjOQxqxLS42jtrdATNUxuG4Ne3IQnPd1I2UfqTuNVO-YKAM_O8XiF_Q2UdiG1ugr-J2FbIzt3o3tYA-zv6pjYOQ8FY7RdD3dEXUr1IXdjvTFiDwAsI0zPT_kfxi-O7LATpEGEs9BQ);
+    opacity: 0.05;
+    pointer-events: none
+    }
+.bento-card:hover {
+    border-color: #A8957A;
+    box-shadow: 0 0 20px rgba(168, 149, 122, 0.1)
+    }
+.fantasy-flourish {
+    font-family: serif;
+    font-style: italic;
+    color: #A8957A;
+    opacity: 0.6
+    }
+.illustrative-container {
+    background-color: #1a1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem
+    }
+.illustrative-img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5))
+    }</style>
 
-	<!-- external css -->
-	<link rel="stylesheet" type="text/css" href="./index.css">
+    <!-- HTML Meta Tags -->
+<title>Developer Profile | Erin Bautista-Medalla</title>
+<meta name="description" content="Erin Bautista-Medalla is a Full Stack Web Developer and strategic leader with over 12 years of experience in systems architecture and operational excellence. Her portfolio showcases a diverse range of projects, including MERN-stack applications, RESTful APIs, and interactive prototypes for e-commerce and booking systems. Combining technical proficiency with an "architect's mindset," Erin focuses on building scalable, high-impact solutions and clean code to solve real-world challenges.">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://erinbautistamedalla-commits.github.io/webportfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Developer Profile | Erin Bautista-Medalla">
+<meta property="og:description" content="Erin Bautista-Medalla is a Full Stack Web Developer and strategic leader with over 12 years of experience in systems architecture and operational excellence. Her portfolio showcases a diverse range of projects, including MERN-stack applications, RESTful APIs, and interactive prototypes for e-commerce and booking systems. Combining technical proficiency with an "architect's mindset," Erin focuses on building scalable, high-impact solutions and clean code to solve real-world challenges.">
+<meta property="og:image" content="images/tl.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="erinbautistamedalla-commits.github.io">
+<meta property="twitter:url" content="https://erinbautistamedalla-commits.github.io/webportfolio/">
+<meta name="twitter:title" content="Developer Profile | Erin Bautista-Medalla">
+<meta name="twitter:description" content="Erin Bautista-Medalla is a Full Stack Web Developer and strategic leader with over 12 years of experience in systems architecture and operational excellence. Her portfolio showcases a diverse range of projects, including MERN-stack applications, RESTful APIs, and interactive prototypes for e-commerce and booking systems. Combining technical proficiency with an "architect's mindset," Erin focuses on building scalable, high-impact solutions and clean code to solve real-world challenges.">
+<meta name="twitter:image" content="images/tl.jpg">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+<!-- NOTE: You selected a new image. Please upload it to your server and replace "YOUR_IMAGE_URL_HERE" with the actual URL. -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 </head>
-<body>
-
-	<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg">
-		  <div class="container">
-		    <a class="navbar-brand" href="#landing" id="logo">
-		    	<span>Erin's </span> Dev Profile
-		    </a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		      <div class="navbar-nav ms-auto">
-		        <a class="nav-link" href="#landing">Home</a>
-		        <a class="nav-link" href="#projects">My Projects</a>
-				<a class="nav-link" href="#tools">Tools</a>
-				<a class="nav-link" href="#contact">Contact</a>
-		      </div>
-		    </div>
-		  </div>
-		</nav>
-	<!-- Navbar end -->
-
-
-	<!-- about start-->
-		<section id="landing" class="container-fluid">
-		<div class="row justify-content-center pb-5 mb-5">
-			<figure class="col-lg-4 m-1 pt-5">
-				<img src="images/erin.png" class="img-fluid">
-			</figure>
-
-			<figcaption class="col mt-5 pt-5">
-				<h2 class="py-2">Hi! I'm Erin Bautista Medalla</h2>
-				<h3 class="py-2">Full Stack Web Developer</h3>
-				<p class="py-2">Highly versatile Full Stack Web Developer and strategic leader with over 12 years of experience building scalable systems and driving operational excellence. Currently the National Program Administrator for the MLBA Foundation, I specialize in translating complex vision into functional, high-impact frameworks.</p>
-				<p class="py-2">My transition into tech is fueled by a career-long focus on systems architecture and process engineering. From co-founding a business to managing nationwide Monitoring & Evaluation (M&E) systems, I bring a unique "architect's mindset" to code. I don't just build apps; I build sustainable solutions designed for growth and user impact.As a 2026 President-Elect for JCI Quezon City Sampaguita, I combine technical proficiency with elite communication and project governance. I am dedicated to writing clean, purposeful code that solves real-world operational challenges.</p>
-			</figcaption>
-		</div>
-	</section>
-	<!-- about end-->
-
-    <!-- 3. PRODUCTS SECTION -->
-  <!-- Uses responsive grid (.row-cols-1, .row-cols-md-3) to stack on mobile and go side-by-side on desktop -->
-  <main id="projects" class="container py-5 my-5">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold display-5">My Projects</h2>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- Project 1 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container"> 
-              <img src="images/p1.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">E-Commerce API Documentation</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.</p> 
-            </div> 
-          </div>
-        </div>
-
-      <!-- Project 2 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container" > 
-              <img src="images/p2.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">Course Booking API Documentation</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> RESTful API for managing course enrollments, featuering user registration, authentication and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p> 
-            </div> 
-          </div>
-        </div>
-
-        <!-- Project 3 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container" > 
-              <img src="images/p3.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">Course booking App</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> A MERN-stack course enrollment system featuring user registration, authentication, and p rofile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p> 
-            </div> 
-          </div>
-        </div>
-
-        <!-- Project 4 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container"> 
-              <img src="images/p4.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">E-commerce App</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.</p> 
-            </div> 
-          </div>
-        </div>
-
-        <!-- Project 5 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container" > 
-              <img src="images/p5.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">Airline Booking System Mockup</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.</p> 
-            </div> 
-          </div>
-        </div>
-        <!-- Project 6 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container"> 
-              <img src="images/p6.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">Airline Booking System Prototype</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.</p> 
-            </div> 
-          </div>
-        </div>
-
-        <!-- Project 7 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container" >
-              <img src="images/p7.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">Short Courses Capstone</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> Placeholder for. your short courses capstone project.</p> 
-            </div> 
-          </div>
-        </div>
-
-        <!-- Project 8 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container" > 
-              <img src="images/p8.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">Short Courses Capstone</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> Placeholder for. your short courses capstone project.</p> 
-            </div> 
-          </div>
-        </div>
-
-        <!-- Project 9 --> 
-        <div class="col"> 
-          <div class="card h-100 border-0 shadow-sm"> 
-            <!-- Added overflow-hidden to keep the image contained within the rounded-top corners -->
-            <div class="bg-light text-white text-center rounded-top d-flex align-items-center justify-content-center overflow-hidden project-image-container"> 
-              <img src="images/p9.png" 
-                   class="img-fluid w-100 h-100 object-fit-cover" 
-                   alt="E-Commerce API Documentation">
-            </div> 
-            <div class="card-body d-flex flex-column p-4"> 
-              <h3 class="h5 card-title fw-bold mb-2">Short Courses Capstone</h3> 
-              <p class="card-text text-muted mb-4 flex-grow-1"> Placeholder for. your short courses capstone project.</p> 
-            </div> 
-          </div>
-        </div>
-        <!-- Projects close -->
-    </div>
-  </main>
-
-<!-- Tools Start -->
-<section id="tools">
-<div class="container-fluid text-center py-5 my-5">
-  <h2 class="pb-5 mb-3" id="banner-text">Tools</h2>
-  
-  <!-- This row stacks 1 per line on mobile, but 3 per line on medium screens+ -->
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    
-    <!-- Front End -->
-    <div class="col">
-      <h3>Front End</h3>
-      <div class="d-flex flex-wrap justify-content-center">
-        <img src="images/7.png" height="120px" alt="HTML">
-        <img src="images/12.png" height="120px" alt="CSS">
-        <img src="images/3.png" height="120px" alt="Bootstrap">
-        <img src="images/9.png" height="120px" alt="JS">
-      </div>
-    </div>
-
-    <!-- MERN -->
-    <div class="col">
-      <h3>MERN</h3>
-      <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-        <img src="images/11.png" height="120px" alt="MongoDB">
-        <img src="images/2.png" height="120px" alt="Express">
-        <img src="images/13.png" height="120px" alt="React">
-        <img src="images/10.png" height="120px" alt="Node">
-      </div>
-    </div>
-
-    <!-- Other Tools -->
-    <div class="col">
-      <h3 >Other Tools</h3>
-      <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-        <img src="images/4.png" height="120px" alt="Heroku">
-        <img src="images/5.png" height="120px" alt="Git">
-        <img src="images/8.png" height="120px" alt="Postman">
-        <img src="images/6.png" height="120px" alt="Sublime">
-      </div>
-    </div>
-
-  </div>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full bg-surface/80 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-margin-edge h-16 z-50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-mono text-label-mono tracking-widest text-text-primary uppercase">ARCHITECT.DEV</span>
+</div>
+<nav class="hidden md:flex gap-gutter">
+<a class="font-label-mono text-label-mono text-primary border-b border-primary uppercase hover:text-primary transition-colors duration-200" href="#work">Artifacts</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant uppercase hover:text-primary transition-colors duration-200" href="#stack">Arsenal</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant uppercase hover:text-primary transition-colors duration-200" href="#archive">Chronicles</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant uppercase hover:text-primary transition-colors duration-200" href="#contact">Signal</a>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Side Navigation Drawer -->
+<aside class="hidden lg:flex fixed inset-y-0 left-0 z-[60] w-20 hover:w-80 transition-all duration-300 ease-in-out flex-col bg-surface-container border-r border-outline-variant shadow-2xl group overflow-hidden">
+<div class="p-6 flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="history_edu">history_edu</span>
+<span class="opacity-0 group-hover:opacity-100 font-headline-md text-headline-md text-text-primary whitespace-nowrap transition-opacity">COMPASS</span>
+</div>
+<div class="mt-12 flex flex-col">
+<a class="flex items-center gap-6 px-6 py-4 bg-primary-container text-on-primary-container border-l-2 border-primary transition-all" href="#work">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="opacity-0 group-hover:opacity-100 font-label-mono text-label-mono transition-opacity">Artifacts</span>
+</a>
+<a class="flex items-center gap-6 px-6 py-4 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" href="#stack">
+<span class="material-symbols-outlined" data-icon="swords">swords</span>
+<span class="opacity-0 group-hover:opacity-100 font-label-mono text-label-mono transition-opacity">Arsenal</span>
+</a>
+<a class="flex items-center gap-6 px-6 py-4 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" href="#archive">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="opacity-0 group-hover:opacity-100 font-label-mono text-label-mono transition-opacity">Chronicles</span>
+</a>
+<a class="flex items-center gap-6 px-6 py-4 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" href="#contact">
+<span class="material-symbols-outlined" data-icon="ink_pen">ink_pen</span>
+<span class="opacity-0 group-hover:opacity-100 font-label-mono text-label-mono transition-opacity">Signal</span>
+</a>
+</div>
+</aside>
+<main class="lg:pl-20">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center px-margin-edge overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20">
+<div class="h-full w-full grid-line"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto w-full">
+<div class="flex flex-col md:flex-row gap-gutter items-end mb-12">
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-6">
+<span class="fantasy-flourish text-xl">✧</span>
+<span class="font-label-mono text-label-mono text-primary uppercase tracking-[0.3em] block">Strategic Leader &amp; Master Builder</span>
+<span class="fantasy-flourish text-xl">✧</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-text-primary mb-8 md:max-w-4xl pt-3">
+                        HI! I'M ERIN <br/> BAUTISTA MEDALLA
+                    </h1>
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-12">
+                        FULL STACK WEB ARCHITECT
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Highly versatile Full Stack Web Developer and Strategic Leader with over 12 years of experience building scalable systems and driving operational excellence.
+                    </p>
+</div>
+<div class="hidden lg:block w-px h-64 bg-outline-variant mb-12 relative">
+<span class="absolute top-0 -left-1 text-[#A8957A]">❦</span>
+<span class="absolute bottom-0 -left-1 text-[#A8957A]">❦</span>
+</div>
+<div class="flex-1 mb-12">
+  <img src="images/Erin.png" height="50px">
+<p class="font-body-md text-body-md text-text-muted italic border-l border-accent-glow pl-6">
+                        "I specialize in translating complex vision into functional, high-impact frameworks with an Architect's Mindset."
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 p-10 bento-card relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 font-label-mono text-[10px] text-outline-variant uppercase">Chronicle_Log.01</div>
+<p class="font-body-md text-body-md leading-relaxed text-on-surface-variant">
+                        My transition into tech is fueled by a career-long focus on systems architecture and process engineering. From co-founding a business to managing nationwide monitoring &amp; evaluation systems, I bring a unique "architect's mindset" to code. I don't just build apps; I build sustainable solutions designed for growth and user impact.
+                    </p>
+<span class="absolute bottom-4 right-6 fantasy-flourish opacity-30 text-4xl">❧</span>
+</div>
+<div class="md:col-span-4 p-10 bento-card bg-primary-container/20 flex flex-col justify-between">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="castle">castle</span>
+<div>
+<p class="font-label-mono text-label-mono text-primary mb-2 uppercase tracking-widest">Current Station</p>
+<p class="font-headline-md text-headline-md text-text-primary">ASPAC Program Administrator</p>
+</div>
+</div>
+</div>
 </div>
 </section>
+<!-- Projects Grid Section -->
+<section class="py-section-gap px-margin-edge bg-surface-container-lowest" id="work">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-24 gap-4">
+<h3 class="font-headline-xl text-headline-xl text-text-primary">SELECTED ARTIFACTS</h3>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase tracking-widest">The Great Works / Era 2024</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Project 1: E-Commerce API -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="bento-card overflow-hidden mb-6 aspect-video relative illustrative-container">
+<img alt="E-Commerce API Illustration" class="illustrative-img transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uhe26GVMEBcFkvohPbfxKN7GDjWr1J11iwKkSxV4ZDOcQrtgMgnDDFxFGPC1wK3tsOeELxh_OEx2LhSTiS1lcF9WMXk3LuvxlwsYbyoMl9rGFBD97ZU-nAae7j-f399-zRQfDstoAAYuSM-jOGH0alX-kkgAxW-68njPcUk-korhww-taxvvlt21wyTvkoUXFeo-dhssE3SwNSlbfviOoHOq619FCGKNH-EJ67aazdUq9gDi1nhv9USrA"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-mono text-label-mono text-primary mb-2">I / THE FOUNDATION</p>
+<h4 class="font-headline-md text-headline-md text-text-primary group-hover:text-accent-glow transition-colors">E-Commerce API Documentation</h4>
+<p class="font-caption text-caption text-text-muted mt-2 max-w-md">Dynamic workflow management with secure authentication and inventory monitoring systems.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-all" data-icon="north_east">north_east</span>
+</div>
+</div>
+<!-- Project 2: Course Booking API -->
+<div class="md:col-span-5 group cursor-pointer">
+<div class="bento-card overflow-hidden mb-6 aspect-square relative illustrative-container">
+<img alt="Course Booking API Illustration" class="illustrative-img transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugmvV2SkcIK8ANsPcNF0ndXNT8xD8P-BFzZg43qxl0rIHxmscpK8VfGF4_d__5pW3TdRNF6psenAV09soKiScOtkthtq3wlyscA78avxMmTcKgzMawC-JQHEgo0zo5OS_mVHlG4pSNyyseqLbVhtIDa9RYwQNpGpWeVL6YljDe5Upz93dSOwHYcqg2ndOuO6gMq8lac02Zl_zymvbL8XD1ypZ5OExFakbGrkkHD9DAqRgWeRLxfWob7BHU"/>
+</div>
+<p class="font-label-mono text-label-mono text-primary mb-2">II / THE ARCHIVE</p>
+<h4 class="font-headline-md text-headline-md text-text-primary group-hover:text-accent-glow transition-colors">Course Booking API</h4>
+<p class="font-caption text-caption text-text-muted mt-2">RESTful system for managing enrollments, user authentication, and profile retrieval.</p>
+</div>
+<!-- Project 3: Course Booking App -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="bento-card overflow-hidden mb-6 aspect-square relative illustrative-container">
+<img alt="Course Booking App Illustration" class="illustrative-img transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uilhYqjMUcNyknFT4lUp3Xa9P_Ocf9xHLR-ewzeH5JQbAWCCljTk-AUoXFdCNXYyi7u51O-gb56S25vxIpyWcYWZNIa8lPUWDSHp_B-JN11CuKhy5IZa0oCBwzaLVdHpuLuhsWWjUzLUHvuM7Pjx0V-PWjcmSM90FGOZdRymmnk6xA7gRnLHVCrBVJ94HyA4eFuSVSJW_0GBwojqz4Y-GzIQCi-arH3-eM5NuhQsc8fXOVOFoYX5D2rbg"/>
+</div>
+<p class="font-label-mono text-label-mono text-primary mb-2">III / THE GRIMOIRE</p>
+<h4 class="font-headline-md text-headline-md text-text-primary group-hover:text-accent-glow transition-colors">Course Booking App</h4>
+</div>
+<!-- Project 4: E-Commerce App -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="bento-card overflow-hidden mb-6 aspect-video relative illustrative-container">
+<img alt="E-Commerce App Illustration" class="illustrative-img transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uj08oxlC_blMK7iN-_D6cWgbneWf3UL3c2IxpKsyGzLecI1TERMtchUrfdWPdV0hsBZTBB5POEeBkYV0Z6dEfxfqj66mZJLoM7B8gfV-SO9Y_lqLltXELJfg4LOtFbyU2YrGyWETfww5usaEZaQfzKJIpjRo2HuEYFsJDaW4y9Fy-TZi79qdnrg1lYCDsLT_b0_6hkqQ5Ka5ciKVbKgWSR55dxoJ5xA0Tt8IMwIDXsNSrggedacXoSQcII"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label-mono text-label-mono text-primary mb-2">IV / THE MARKETPLACE</p>
+<h4 class="font-headline-md text-headline-md text-text-primary group-hover:text-accent-glow transition-colors">E-Commerce App</h4>
+<p class="font-caption text-caption text-text-muted mt-2">Dynamic product catalog with sorting, real-time cart updates, and admin dashboard.</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-all" data-icon="north_east">north_east</span>
+</div>
+</div>
+<!-- Project 5: Airline Booking System -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="bento-card overflow-hidden mb-6 aspect-[16/9] relative illustrative-container">
+<img alt="Airline Booking Illustration" class="illustrative-img transition-transform duration-700 group-hover:scale-105" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<p class="font-label-mono text-label-mono text-primary mb-2">V / THE VOYAGE</p>
+<h4 class="font-headline-md text-headline-md text-text-primary">Airline Booking System</h4>
+</div>
+<!-- Project 6: Airline Booking Prototype -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="bento-card overflow-hidden mb-6 aspect-[16/9] relative illustrative-container">
+<img alt="Airline Prototype Illustration" class="illustrative-img transition-transform duration-700 group-hover:scale-105" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<p class="font-label-mono text-label-mono text-primary mb-2">VI / THE BLUEPRINT</p>
+<h4 class="font-headline-md text-headline-md text-text-primary">Airline Booking Prototype</h4>
+</div>
+<!-- Capstones -->
+<div class="md:col-span-4 group">
+<div class="bento-card overflow-hidden mb-6 aspect-video p-4 illustrative-container">
+<img alt="Capstone I" class="w-full h-auto illustrative-img group-hover:scale-105 transition-all" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<h4 class="font-label-mono text-label-mono text-on-surface-variant text-center uppercase tracking-widest">Trial of Insight I</h4>
+</div>
+<div class="md:col-span-4 group">
+<div class="bento-card overflow-hidden mb-6 aspect-video p-4 illustrative-container">
+<img alt="Capstone II" class="w-full h-auto illustrative-img group-hover:scale-105 transition-all" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<h4 class="font-label-mono text-label-mono text-on-surface-variant text-center uppercase tracking-widest">Trial of Insight II</h4>
+</div>
+<div class="md:col-span-4 group">
+<div class="bento-card overflow-hidden mb-6 aspect-video p-4 illustrative-container">
+<img alt="Capstone III" class="w-full h-auto illustrative-img group-hover:scale-105 transition-all" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<h4 class="font-label-mono text-label-mono text-on-surface-variant text-center uppercase tracking-widest">Trial of Insight III</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack Section -->
+<section class="py-section-gap px-margin-edge bg-surface" id="stack">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-4">
+<h3 class="font-headline-lg text-headline-lg text-text-primary mb-6">THE ARSENAL</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                        A curated selection of tools and technologies I use to architect robust digital solutions.
+                    </p>
+<div class="mt-8 fantasy-flourish text-2xl">❧ ❧ ❧</div>
+</div>
+<div class="md:col-span-8">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<!-- Skill Tags -->
+<div class="p-6 bento-card flex flex-col items-center gap-4 group">
+<span class="material-symbols-outlined text-3xl group-hover:text-primary transition-colors" data-icon="brush">brush</span>
+<span class="font-label-mono text-label-mono uppercase">Front End</span>
+</div>
+<div class="p-6 bento-card flex flex-col items-center gap-4 group">
+<span class="material-symbols-outlined text-3xl group-hover:text-primary transition-colors" data-icon="shelves">shelves</span>
+<span class="font-label-mono text-label-mono uppercase">MERN</span>
+</div>
+<div class="p-6 bento-card flex flex-col items-center gap-4 group">
+<span class="material-symbols-outlined text-3xl group-hover:text-primary transition-colors" data-icon="settings_ethernet">settings_ethernet</span>
+<span class="font-label-mono text-label-mono uppercase">Node.js</span>
+</div>
+<div class="p-6 bento-card flex flex-col items-center gap-4 group">
+<span class="material-symbols-outlined text-3xl group-hover:text-primary transition-colors" data-icon="hub">hub</span>
+<span class="font-label-mono text-label-mono uppercase">React</span>
+</div>
+<div class="p-6 bento-card flex flex-col items-center gap-4 group">
+<!-- <span class="material-symbols-outlined text-3xl group-hover:text-primary transition-colors" data-icon="scrolled_program">scrolled_program</span> -->
+<span class="font-label-mono text-label-mono uppercase">API Design</span>
+</div>
+<div class="p-6 bento-card flex flex-col items-center gap-4 group">
+<span class="material-symbols-outlined text-3xl group-hover:text-primary transition-colors" data-icon="terminal">terminal</span>
+<span class="font-label-mono text-label-mono uppercase">Git / CLI</span>
+</div>
+<div class="p-6 bento-card flex flex-col items-center gap-4 group">
+<span class="material-symbols-outlined text-3xl group-hover:text-primary transition-colors" data-icon="analytics">analytics</span>
+<span class="font-label-mono text-label-mono uppercase">M&amp;E Systems</span>
+</div>
+<div class="p-6 bento-card flex flex-col items-center gap-4 group">
+<span class="material-symbols-outlined text-3xl group-hover:text-primary transition-colors" data-icon="architecture">architecture</span>
+<span class="font-label-mono text-label-mono uppercase">Architecture</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap px-margin-edge bg-surface-container-low border-t border-outline-variant" id="contact">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-5">
+<h3 class="font-headline-xl text-headline-xl text-text-primary mb-8">SEND A <br/> SIGNAL</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Ready to transform your vision into a scalable system? Let's discuss your next project architecture.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors bg-surface-elevation">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface hover:text-primary transition-colors">hello@erinbautista.dev</span>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:border-primary transition-colors bg-surface-elevation">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface">Quezon City, Philippines</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<form class="bento-card p-10 space-y-8 bg-surface-elevation">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono text-primary uppercase tracking-widest">The Identity</label>
+<input class="w-full bg-transparent border-b border-outline focus:border-primary focus:ring-0 transition-colors p-4 font-body-md text-text-primary" placeholder="Full Name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Electronic Mail</label>
+<input class="w-full bg-transparent border-b border-outline focus:border-primary focus:ring-0 transition-colors p-4 font-body-md text-text-primary" placeholder="email@address.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-mono text-label-mono text-primary uppercase tracking-widest">Mission Objective</label>
+<textarea class="w-full bg-transparent border-b border-outline focus:border-primary focus:ring-0 transition-colors p-4 font-body-md text-text-primary resize-none" placeholder="Describe the vision..." rows="4"></textarea>
+</div>
+<button class="w-full py-6 bg-text-primary text-background font-label-mono font-bold uppercase tracking-widest hover:bg-secondary transition-all flex items-center justify-center gap-4 shadow-lg" type="submit">
+                            Dispatch Signal
+                            <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-edge flex flex-col md:flex-row justify-between items-center gap-gutter">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-2">
+<span class="fantasy-flourish">❦</span>
+<span class="text-text-primary font-bold font-label-mono tracking-widest uppercase">SYSTEM_ARCHITECT</span>
+<span class="fantasy-flourish">❦</span>
+</div>
+<p class="font-label-mono text-label-mono text-on-surface-variant">© 2024 ERIN BAUTISTA MEDALLA. RECORDED IN THE ANNALS.</p>
+</div>
+<div class="flex gap-gutter">
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-accent-glow underline decoration-accent-glow transition-all duration-200" href="#">The Vault</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-accent-glow underline decoration-accent-glow transition-all duration-200" href="#">The Nexus</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-accent-glow underline decoration-accent-glow transition-all duration-200" href="#">Source</a>
+<a class="font-label-mono text-label-mono text-on-surface-variant hover:text-accent-glow underline decoration-accent-glow transition-all duration-200" href="#">Scrolls</a>
+</div>
+</div>
+</footer>
+</main>
+<script>
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
-<!-- Tools End -->
-
-	<!-- Contact Start -->
-	<div class="container-fluid" id="contact">
-		<div class="row">
-			<div class="col p-3" id="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61752.20368601782!2d121.04338407910156!3d14.6835722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b150d59e3fe1%3A0x2ef0ac20aa289820!2sRocket%20Coffee%20Co%20%5BHoly%20Spirit%20Dr.%5D!5e0!3m2!1sen!2sph!4v1779298195576!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-			<div class="col">
-				<div id="contactForm">
-					<h3 id="contactUs">CONTACT US</h3>
-					<form>
-						<div class="form-group mb-4">
-							<div>
-								<label for="nameInput">Name</label>
-							</div>
-							<div>
-								<input class="inputs" type="text" id="nameInput" placeholder="John Doe">
-							</div>
-						</div>
-						<div class="form-group mb-4">
-							<div>
-								<label for="emailInput">Email Address</label>
-							</div>
-							<div>
-								<input class="inputs" type="email" id="emailInput" placeholder="john.doe@mail.com">
-							</div>
-						</div>
-						<div class="form-group mb-4">
-							<div>
-								<label for="messageInput">Message</label>
-							</div>
-							<div>
-								<textarea class="inputs" id="messageInput"></textarea>
-							</div>
-							
-						</div>
-						
-						<button class="btn-submit" type="submit" id="submitButton">Submit</button>
-					</form>
-				</div>
-				
-			</div>
-		</div>
-	
-	</div>
-		<div id="footer" class="text-center p-4">
-			<p>Erin Bautista-Medalla </p>
-			<p> Full Stack Developer </p>
-				<p>All rights reserved.</p>
-		</div>
-	<!-- Contact End -->
-
-
-	<!-- bootstrap js -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-</body>
-</html>
+    // Suble parallax for grid
+    window.addEventListener('scroll', () => {
+        const grid = document.querySelector('.grid-line');
+        if(grid) {
+            const scrolled = window.pageYOffset;
+            grid.style.transform = `translateY(${scrolled * 0.1}px)`;
+        }
+    });
+</script>
+</body></html>
